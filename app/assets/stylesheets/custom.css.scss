@@ -83,7 +83,7 @@ p {
 
 /* footer */
 footer {
-	margin-top: 200px;
+	margin-top: 90%;
 	margin-left: 20px;
 	padding-top: 5px;
 	border-top: 1px solid;
@@ -212,3 +212,22 @@ input, textarea, select  {
 	@extend .error;
 }
 
+/* Users index */
+.users {
+	list-style: none;
+	margin: 0;
+ 	li {
+		overflow: auto;
+		padding: 10px 0;
+		border-top: 1px solid $grayLighter;
+		&:last-child {
+			border-bottom: 1px solid $grayLighter;
+		}
+		a {
+			width: 10%;
+			padding: 0.2em 2em;
+		    border-right: 1px solid $grayLighter;
+			float: left;
+		}
+	}
+}
