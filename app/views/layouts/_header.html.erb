@@ -1,9 +1,9 @@
 	<header class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
-			<div class="container-fluid">
+			<div class="container">
 			<h2><%= link_to "Micro Blog", root_path, id: "logo" %></h2>
 				<nav>
-					<ul id="nav pull-right">
+					<ul id="navcontainer">
 						<li><%= link_to "Home", root_path %> </li> 
 						<li><%= link_to "Help", help_path %> </li> 
 						<% if signed_in? %>

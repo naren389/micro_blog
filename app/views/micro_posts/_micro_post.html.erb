@@ -1,0 +1,8 @@
+<li>
+	<span class="content"> <%=micro_post.content %></span>
+	<span class="timestamp"> Posted <%= time_ago_in_words(micro_post.created_at) %> ago</span>
+	<br> </br>
+	<% if current_user?(micro_post.user) %>
+		<%= link_to "delete", micro_post, method: :delete, confirm: "Are you sure ?", title: micro_post.content %>
+	<% end %>
+</li>
